@@ -6,14 +6,36 @@
 </head>
 <body>
     <header>
-        <img src="assests/images/logo.png" alt="logo" height="200px" width="250">
-        <a href="login.html" target="_blank">login</a>
+        <a href="index.html"><img src="assests/images/logo.png" alt="logo" height="200px" width="250"></a>
+        <a href="login.html" target="_self">login</a>
     </header>
 
     <section>
         <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="redisson blue">
         <br>
-        <a href="payment.html">Book now</a>
+        <form action="payment.html" method="get" target="_self">
+            <label for="adults">Adults</label>
+            <input type="number" min="1" id="adults" name="adults" required>
+            <br>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" autocomplete="off" required>
+            <br>
+            <label for="from-date">From Date</label>
+            <input type="date" name="from-date" id="from-date" required>
+            <br>
+            <label for="to-date">To Date</label>
+            <input type="date" name="to-date" id="to-date" required>
+            <br>
+            <label for="total">Total</label>
+            <input type="text" readonly>
+            <br>
+            <input type="submit">
+            
+        </form>
+        
+       
+    </section>    
+    <section>
         <h2>Redisson Blu Hotel</h2>
         <p>Rating</p>
         <p>5 Star</p>
@@ -25,12 +47,14 @@
             <li>Fitness center</li>
             <li>Pool</li>
         </ul>
+    </section>    
+    <section>
         <h5>Description</h5>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni odio numquam earum minima illum quaerat neque quasi esse praesentium labore? Accusantium quod distinctio natus animi sequi ea soluta blanditiis praesentium.</p>
     </section>
 
     <footer>
-        <a href="contact.html" target="_blank">Contact us</a>
+        <a href="contact.html" target="_self">Contact us</a>
         <br/>
         <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="logo 1" height="20px" width="22px"></a>
         <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="logo 1" height="20px" width="22px"></a>
@@ -40,3 +64,4 @@
     </footer>
    
 </body>
+</html>
