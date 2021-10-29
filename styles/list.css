@@ -1,6 +1,18 @@
+body{
+    margin: 0px;
+    background-color: #e0e0e0;
+}
 #logo{
     height: 60px;
     width: 60px;
+}
+header,footer{
+    background-color: rosybrown;
+    }
+.hotel-decription{
+    margin: 2%;
+    background-color: rgb(132,136,139);
+    width: 40%;
 }
 .hotel-img{
     height: 200px;

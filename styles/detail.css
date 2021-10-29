@@ -1,10 +1,26 @@
+body{
+    margin: 0px;
+    background-color: #e0e0e0;
+}
 #logo{
     height: 60px;
     width: 60px;
 }
+header,footer{
+    background-color: rosybrown;
+    }
 #hotel-img{
     height: 500px;
     width: 500px;
+}
+#img{
+    margin: 2% 4% 0%;
+}
+#form{
+    margin: 0% 4% 1%;
+}
+#description{
+    margin: 1% 4% 2%;
 }
 .social-logo{
     height: 20px;
