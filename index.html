@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
    <title>Index</title>
    <link rel="stylesheet" href="styles/index.css">
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <img src="assests/images/logo.png" alt="logo" height="200px" width="250" id="logo">
-        <a href="login.html" target="_self">login</a>
+        <a id="login" href="login.html" target="_self">login</a>
     </header>
-    <section  >
+    <section id="searchbar-back" >
          <div id="searchbar" >
             <input  type="text" placeholder="City">
          </div> 
@@ -23,18 +24,24 @@
             <img class="city-image" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="image 4" height="300px" width="300px">
         </article>
         <br/>
-        <a href="index.html">View more >></a>
+        <article id="view-more">
+            <a class="view-more-child" href="index.html">View more >></a>
+        </article> 
+        <br/> 
+        <br/>
+        <br/>
     </section>
 
     <footer>
-        <a href="contact.html" target="_self">Contact us</a>
         <br/>
-        <a class="social-logo" href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="logo 1" height="20px" width="22px"></a>
-        <a class="social-logo" href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="logo 2" height="20px" width="22px"></a>
-        <a class="social-logo" href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="logo 3" height="20px" width="22px"></a>
+        <a id="contact" href="contact.html" target="_self">Contact us</a>
+        <!-- <br/> -->
+        <section id="footer-logo">
+            <a class="social-logo" href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="logo 1" height="20px" width="22px"></a>
+            <a class="social-logo" href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="logo 2" height="20px" width="22px"></a>
+            <a class="social-logo" href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="logo 3" height="20px" width="22px"></a>
+        </section>
         <p>&copy; 2021 ROOM SEARCH PVT LTD </p>
     </footer>
-    
-   
 </body>
 </html>

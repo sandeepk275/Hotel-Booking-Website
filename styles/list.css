@@ -9,16 +9,63 @@ body{
 header,footer{
     background-color: rosybrown;
     }
+header {
+    top: 0%;
+    position: sticky;
+    }
+#login {
+    float: right;
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+        
+    }
+    ul{
+        list-style: none;
+        margin: 1% 35%;
+    }
+    
+    li {
+        display: inline;
+    }
+    nav a {
+        text-decoration: none;
+        margin: 20px;
+        color: black;
+        font-weight: bold;
+    }
 .hotel-decription{
-    margin: 2%;
+    margin: 3%;
     background-color: rgb(132,136,139);
     width: 40%;
+   display: inline-block;
+   color: black;
 }
 .hotel-img{
     height: 200px;
     width: 250px;
 }
+#mapview {
+    display: none;
+}
 .social-logo{
     height: 20px;
     width: 22px;
+}
+#footer-logo {
+    float:right;
+    margin: 10px;
+}
+footer p {
+    text-align: center;
+}
+#contact{
+   margin-left: 1%;
+   text-decoration: none;
+   color: black;
+}
+footer {
+    bottom: 0%;
+    position: sticky;
+
 }

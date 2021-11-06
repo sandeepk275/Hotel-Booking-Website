@@ -9,6 +9,17 @@ body{
 header,footer{
     background-color: rosybrown;
     }
+    header {
+        top: 0%;
+        position: sticky;
+        }
+    #login {
+        float: right;
+        margin: 20px;
+        text-decoration: none;
+        color: black;
+        
+        }
 #hotel-img{
     height: 500px;
     width: 500px;
@@ -29,7 +40,31 @@ margin: 2%;
     padding: 1% 2%;
 
 }
+#paynow {
+    margin: 2% auto;
+}
+#paynow a {
+    text-decoration: none;
+    color: black;
+}
 .social-logo{
     height: 20px;
     width: 22px;
+}
+#footer-logo {
+    float:right;
+    margin: 10px;
+}
+footer p {
+    text-align: center;
+}
+#contact{
+   margin-left: 1%;
+   text-decoration: none;
+   color: black;
+}
+footer {
+    bottom: 0%;
+    position: sticky;
+
 }
