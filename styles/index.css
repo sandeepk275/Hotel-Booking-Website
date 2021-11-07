@@ -4,19 +4,23 @@
     background-color: #e0e0e0;
 }
 #logo{
+    margin-left: 1%;
     height: 60px;
     width: 60px;
 }
 header,footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: rosybrown;
+   
 }
 header {
     top: 0%;
     position: sticky;
     }
 #login {
-    float: right;
-    margin: 20px;
+     margin-right: 2%;
     text-decoration: none;
     color: black;
     
@@ -27,42 +31,69 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #searchbar-back input {
-    position: absolute;
-    top: 50%;
-    left: 37%;
-    border: 1px transparent ;
-    width: 27%;
+    border: 1px transparent #f1f1f1;
+    width: 400px;
     background-color: #f1f1f1;
     border-radius: 12px;
     padding: 10px;
     font-size: 16px;
 }
+#searchbar-back input:focus {
+    background-color: #f1f1f1;
+}
 .city-image{
     height: 150px;
     width: 150px;
-    display: inline-block;
-    padding: 4%;
     border-radius: 25%;
-
+    box-shadow: 10px 10px 10px grey;
 }
-#cityimg{
-    margin-left: 15%;
-    margin-right: 15%;
+
+#city-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5% 10%;
+   
+    
+}
+.city-card {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+}
+
+.overlay {
+    position: absolute;
+    background: rg(0, 0, 0);
+    background: rgba(0,0,0,0.5);
+    bottom: 0;
+    top: 0;
+    opacity: 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 25%;
+    transition: .5s ease;
+    color: #f1f1f1;
+    text-align: center;
+  
+}
+
+.city-card:hover .overlay {
+   opacity: 1;
 }
 #view-more{
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3%;
 }
 #view-more a {
     text-decoration: none;
-    top: 50%;
-    left: 50%;
-    margin-bottom: 100%;
-    float: none;
-    position: absolute;
-    transform: translate(-50%, -50%);
     color: black;
 }
 .social-logo{
@@ -70,14 +101,10 @@ header {
     width: 22px;
 }
 #footer-logo {
-    float:right;
-    margin: 10px;
-}
-footer p {
-    text-align: center;
+    margin-right: 2%;
 }
 #contact{
-   margin-left: 1%;
+   margin-left: 2%;
    text-decoration: none;
    color: black;
 }

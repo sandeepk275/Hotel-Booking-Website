@@ -3,22 +3,26 @@ body{
     background-color: #e0e0e0;
 }
 #logo{
+    margin-left: 1%;
     height: 60px;
     width: 60px;
 }
 header,footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: rosybrown;
-    }
+   
+}
 header {
     top: 0%;
     position: sticky;
     }
 #login {
-    float: right;
-    margin: 20px;
+     margin-right: 2%;
     text-decoration: none;
     color: black;
-        
+    
     }
     ul{
         list-style: none;
@@ -35,12 +39,24 @@ header {
         font-weight: bold;
     }
 .hotel-decription{
-    margin: 3%;
-    background-color: rgb(132,136,139);
+   
+    background-color: lightgrey;
     width: 40%;
-   display: inline-block;
-   color: black;
+     margin: 3%;
+     color: black;
+    flex-direction: row;
+    display: inline-block;
 }
+.about {
+   display: inline-block;
+   text-align: center;
+}
+#list-view {
+    display: flex;
+   
+    justify-content: space-between;
+}
+    
 .hotel-img{
     height: 200px;
     width: 250px;
@@ -53,14 +69,10 @@ header {
     width: 22px;
 }
 #footer-logo {
-    float:right;
-    margin: 10px;
-}
-footer p {
-    text-align: center;
+    margin-right: 2%;
 }
 #contact{
-   margin-left: 1%;
+   margin-left: 2%;
    text-decoration: none;
    color: black;
 }
