@@ -5,23 +5,59 @@
    <title>List</title>
    <link rel="stylesheet" href="styles/list.css">
    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="styles/common.css">
 </head>
 <body>
-    <header>
+    <header class="header-footer">
         <a href="index.html" target="_self"><img src="assests/images/logo.png" alt="logo" height="200px" width="250" id="logo"></a>
-        <a id="login" href="login.html" target="_self">login</a>
-    </header>
+       <!-- Button trigger modal -->
+       <button id="login" type="button" class="btn btn-light btn-sm" data-toggle="modal" data-backdrop="false" data-target="#login-modal">LOGIN</button>
 
+       <!-- Modal -->
+           <div class="modal fade" id="login-modal"  role="dialog" tabindex="-1" aria-labelledby="login-modal-label" aria-hidden="true">
+             <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                     <h5 class="modal-title" id="login-modal-label">Please login</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                   </div>
+                   <div class="modal-body">
+                     <form id="login-form">
+                         <div class="login-field">
+                             <label for="username">Username: </label>
+                             <input type="text" id="username" name="username" placeholder="Enter Username" required />
+                         </div>
+                         <div class="login-field">
+                             <label for="password">Password: </label>
+                             <input type="password" id="password" name="password" placeholder="Enter Password" required />
+                         </div>
+                     </form>
+                   </div>
+                   <div class="modal-footer">
+                     <button id="button" type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
+                   </div>
+                </div>
+             </div>
+         </div>
+    </header>
+<section id="container">
     <section>
          <nav>
-            <ul>
-                <li><a  href="#listview" target="_self">List View</a></li>
-                <li><a href="#mapview" target="_self">Map View</a></li>
-             </ul>
+            <ul class="nav nav-pills" id="pills">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" href="#listview">list View</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" href="#mapview">Map Views</a>
+                </li>
+            </ul>
          </nav>
     </section>
-    <section id="listview">
-        
+    <div class="tab-content" id="pills-tab-content">
+    <section id="listview" class="tab-pane fade show active">
                 <a href="detail.html" target="_self">
             <article class="hotel-decription">
                 <img class="hotel-img" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="redisson blue">
@@ -53,14 +89,41 @@
                 
         </article>
     </section>    
-    <section id="mapview">
+    <section id="mapview" class="tab-pane fade">
         <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="map">
-        <br>
-        <p>Map Image</p>
     </section>
+    </div>
+</section>
+    <footer class="header-footer">
+         <!-- Button trigger modal -->
+         <button id="contact" type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-backdrop="false" data-target="#contact-modal">Contact us</button>
 
-    <footer>
-        <a id="contact" href="contact.html" target="_self">Contact us</a>
+         <!-- Modal -->
+             <div class="modal fade" id="contact-modal"  role="dialog" tabindex="-1" aria-labelledby="login-modal-label" aria-hidden="true">
+               <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                       <h5 class="modal-title" id="login-modal-label">Get in touch</h5>
+                       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                     </div>
+                     <div class="modal-body">
+                       <form >
+                             <p>Thank you for reaching out!!!
+                                 <br>
+                              enter you email and we will get back to you.</p>
+                           
+                           
+                               <label for="email">Email: </label>
+                               <input type="email" id="email" name="email" placeholder="Enter your email id" required />
+                           
+                       </form>
+                     </div>
+                     <div class="modal-footer">
+                       <button id="button" type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
+                     </div>
+                  </div>
+               </div>
+           </div>
         
         <p>&copy; 2021 ROOM SEARCH PVT LTD </p>
 

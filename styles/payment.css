@@ -1,81 +1,47 @@
-body{
-    margin: 0px;
 
-    background-color: #e0e0e0;
+
+    /* content start */
+#hotel-img{
+    max-height: 300px;
+    max-width: 270px;
 }
-#logo{
-    margin-left: 1%;
-    height: 60px;
-    width: 60px;
-}
-header,footer{
+#hotel-address{
+    background-color: rgb(132, 136, 139);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-color: rosybrown;
-   
-}
-header {
-    top: 0%;
-    position: sticky;
-    }
-#login {
-     margin-right: 2%;
-    text-decoration: none;
-    color: black;
-    
-    }
-#hotel-img{
-    height: 500px;
-    width: 500px;
-}
-#hotel-add{
-    background-color: rgb(132, 136, 139);
     width: 50%;
     height: 20%;
-    margin: 2% 25%;
+    margin: 10% 25% 0%;
+}
+#address {
+    margin: 2%;
 }
 .booking {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background-color: rosybrown;
-    height: 200px;
-   margin: 2%;
-   padding: 2%;
+    justify-content: space-between;
+    border: 1px solid black;
+    max-height: 200px;
+   margin: 2% 2% 10%;
    border-radius: 5px;
 }
-#booking-detail{
-margin: 2%;
+#booking-detail {
+    margin-left: 10%;
 }
 #pay-detail{
-    margin: 2%;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 1% 2%;
+    margin-left: 5%;
 }
 #paynow {
-    margin: 2% auto;
+    margin-right: 15%;
 }
 #paynow a {
     text-decoration: none;
     color: black;
-   margin-right: 2%;
 }
-.social-logo{
-    height: 20px;
-    width: 22px;
+#content {
+    font-family: cursive;
 }
-#footer-logo {
-    margin-right: 2%;
-}
-#contact{
-   margin-left: 2%;
-   text-decoration: none;
-   color: black;
-}
-footer {
-    bottom: 0%;
-    position: sticky;
 
-}
+/* content end */
+

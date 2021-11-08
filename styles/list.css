@@ -1,55 +1,29 @@
-body{
-    margin: 0px;
-    background-color: #e0e0e0;
-}
-#logo{
-    margin-left: 1%;
-    height: 60px;
-    width: 60px;
-}
-header,footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rosybrown;
+
+    #pills {
+        justify-content: center;
+    }
+    #container {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        margin-top: 6%;
+    }
+.hotel-decription {
    
-}
-header {
-    top: 0%;
-    position: sticky;
-    }
-#login {
-     margin-right: 2%;
-    text-decoration: none;
-    color: black;
-    
-    }
-    ul{
-        list-style: none;
-        margin: 1% 35%;
-    }
-    
-    li {
-        display: inline;
-    }
-    nav a {
-        text-decoration: none;
-        margin: 20px;
-        color: black;
-        font-weight: bold;
-    }
-.hotel-decription{
-   
+    margin: 4% 5% 0% 5%; 
     background-color: lightgrey;
     width: 40%;
-     margin: 3%;
-     color: black;
-    flex-direction: row;
-    display: inline-block;
+    float: left;
+    display: flex;
+    color: black;
+    justify-content: start;
+    align-content: center;
+}
+.hotel-decription:hover {
+    background-color: rosybrown;
 }
 .about {
-   display: inline-block;
-   text-align: center;
+   margin: 2%;
 }
 #list-view {
     display: flex;
@@ -62,22 +36,6 @@ header {
     width: 250px;
 }
 #mapview {
-    display: none;
+   margin-bottom:10% ;
 }
-.social-logo{
-    height: 20px;
-    width: 22px;
-}
-#footer-logo {
-    margin-right: 2%;
-}
-#contact{
-   margin-left: 2%;
-   text-decoration: none;
-   color: black;
-}
-footer {
-    bottom: 0%;
-    position: sticky;
 
-}
