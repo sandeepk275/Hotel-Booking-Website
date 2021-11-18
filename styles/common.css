@@ -1,6 +1,10 @@
 *{
     font-family: 'Ubuntu', sans-serif;
 }
+.Main-container{
+    width: 100%;
+    height: 100%;
+}
 body{
     margin: 0px;
 
@@ -23,9 +27,27 @@ body{
 }
 header {
     top: 0%;
-    position: sticky;
+    /* position: sticky; */
     }
+
 /* footer things */
+
+footer {
+    padding: 0.7%;
+    bottom: 0%;
+    /* position: sticky; */
+
+}
+
+#contact{
+    margin-left: 2%;
+    /* text-decoration: none;
+    color: black; */
+ }
+#para{
+    font-size: 10px;
+}
+
 .social-logo{
     height: 20px;
     width: 22px;
@@ -33,17 +55,8 @@ header {
 #footer-logo {
     margin-right: 2%;
 }
-#contact{
-   margin-left: 2%;
-   text-decoration: none;
-   color: black;
-}
-footer {
-    padding: 0.5%;
-    bottom: 0%;
-    position: sticky;
 
-}
+
 
 
 #login {

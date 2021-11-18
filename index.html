@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Index</title>
    <link rel="stylesheet" href="styles/index.css">
    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
@@ -12,6 +14,7 @@
 </head>
 
 <body>
+<section class="Main-container">
     <header class="header-footer">
         <img id="logo" src="assests/images/logo.png" alt="logo" height="200px" width="250" >
          
@@ -46,49 +49,80 @@
                 </div>
             </div>
     </header>
+        <section id="index-container">
+            <section id="banner"  >
+                <div id="searchbar">
+                    <input id="search-input"  type="text" placeholder="City">
+                </div>
+                    
+            </section>
 
-    <section id="banner"  >
-        <div id="searchbar">
-            <input id="search-input"  type="text" placeholder="City">
-        </div>
-            
-    </section>
+            <section id="city-card-container" >
 
-    <section id="city-card-container">
-        <article class="city-card">
-            <a id="delhi" href="list.html" target="_self"><img class="city-image" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="image 1" height="300px" width="300px"></a>
-           <a href="list.html" target="_self">
-                <div class="overlay"><span>Delhi</span></div>
-            </a>
-             
-        </article>
-        <article class="city-card">  
-            <img class="city-image" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" alt="image 2" >
+                <article class="city-card"  >
+                    <a id="delhi" href="list.html" target="_self"><img class="city-image" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="image 1" height="300px" width="300px"></a>
+                <a href="list.html" target="_self">
+                        <div class="overlay"><span>Delhi</span></div>
+                    </a>
+                    
+                </article>
+                <article class="city-card"   >  
+                    <img class="city-image" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" alt="image 2" >
+                    
+                        <div class="overlay"><span>Goa</span></div>
+                    
+                </article>
+                <article class="city-card"  >     
+                    <img class="city-image" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="image 3" height="300px" width="300px">
+                    
+                        <div class="overlay"><span>Hydrabad</span></div>
+                    
+                </article>
+                <article class="city-card" >    
+                    <img class="city-image" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="image 4" height="300px" width="300px">
+                    
+                        <div class="overlay"><span>Kolkata</span></div>
+                
+                </article>
             
-                <div class="overlay"><span>Goa</span></div>
-            
-        </article>
-        <article class="city-card">     
-            <img class="city-image" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="image 3" height="300px" width="300px">
-            
-                <div class="overlay"><span>Hydrabad</span></div>
-            
-        </article>
-        <article class="city-card">    
-            <img class="city-image" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="image 4" height="300px" width="300px">
-            
-                <div class="overlay"><span>Kolkata</span></div>
-           
-        </article>
-    </section>
+                <article class="city-card"  >    
+                    <img class="city-image" src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg" alt="image 5" height="300px" width="300px">
+                    
+                        <div class="overlay"><span>Chennai</span></div>
+                
+                </article>
 
+                <article class="city-card">    
+                    <img class="city-image" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg" alt="image 6" height="300px" width="300px">
+                    
+                        <div class="overlay"><span>Agra</span></div>
+                
+                </article>
 
-    <section id="view-more">
-        <a href="index.html"><button type="button" class="btn btn-secondary">View more</button></a>
+                <article class="city-card" >    
+                    <img class="city-image" src="https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg" alt="image 7" height="300px" width="300px">
+                    
+                        <div class="overlay"><span>Jaipur</span></div>
+                
+                </article>
+
+                <article class="city-card" >    
+                    <img class="city-image" src="https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg" alt="image 8" height="300px" width="300px">
+                    
+                        <div class="overlay"><span>Bengalore</span></div>
+                
+                </article>
         
-    </section> 
+            </section>
+           
 
-   
+
+                <section id="view-more">
+                    <a href="index.html"><button type="button" class="btn btn-secondary">View more</button></a>
+                    
+                </section> 
+        </section>
+
     <footer class="header-footer">
           
         <!-- Button trigger modal -->
@@ -120,9 +154,10 @@
                  </div>
               </div>
           </div>
-        
-        <p>&copy; 2021 ROOM SEARCH PVT LTD </p>
-
+        <section id="para">
+            &copy; 2021 ROOM SEARCH PVT LTD
+        </section>
+      
         <section id="footer-logo">
             <a class="social-logo" href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="logo 1" height="20px" width="22px"></a>
             <a class="social-logo" href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="logo 2" height="20px" width="22px"></a>
@@ -130,5 +165,6 @@
         </section>
 
     </footer>
+</section>  
 </body>
 </html>
