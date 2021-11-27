@@ -11,43 +11,13 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
    <link rel="stylesheet" href="styles/common.css">
+   
 </head>
 
 <body>
 <section class="Main-container">
-    <header class="header-footer">
-        <img id="logo" src="assests/images/logo.png" alt="logo" height="200px" width="250" >
-         
+    <header class="header-footer" id="header">
         
-        <!-- Button trigger modal -->
-         <button id="login" type="button" class="btn btn-light btn-sm" data-toggle="modal" data-backdrop="false" data-target="#login-modal">LOGIN</button>
-
-          <!-- Modal -->
-              <div class="modal fade" id="login-modal"  role="dialog" tabindex="-1" aria-labelledby="login-modal-label" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                   <div class="modal-content">
-                     <div class="modal-header">
-                        <h5 class="modal-title" id="login-modal-label">Please login</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      </div>
-                      <div class="modal-body">
-                        <form id="login-form">
-                            <div class="login-field">
-                                <label for="username">Username: </label>
-                                <input type="text" id="username" name="username" placeholder="Enter Username" required />
-                            </div>
-                            <div class="login-field">
-                                <label for="password">Password: </label>
-                                <input type="password" id="password" name="password" placeholder="Enter Password" required />
-                            </div>
-                        </form>
-                      </div>
-                      <div class="modal-footer">
-                        <button id="button" type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
-                      </div>
-                   </div>
-                </div>
-            </div>
     </header>
         <section id="index-container">
             <section id="banner"  >
@@ -84,7 +54,9 @@
                         <div class="overlay"><span>Kolkata</span></div>
                 
                 </article>
-            
+            </section>
+
+            <section id="viewMore-city-card-container">
                 <article class="city-card"  >    
                     <img class="city-image" src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg" alt="image 5" height="300px" width="300px">
                     
@@ -118,53 +90,18 @@
 
 
                 <section id="view-more">
-                    <a href="index.html"><button type="button" class="btn btn-secondary">View more</button></a>
+                    <a href="#">
+                        <button type="button" onclick="onclickView()" id="view-more-btn" class="btn btn-secondary">View more</button>
+                    </a>
                     
                 </section> 
         </section>
 
-    <footer class="header-footer">
+    <footer class="header-footer" id="footer">
           
-        <!-- Button trigger modal -->
-        <button id="contact" type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-backdrop="false" data-target="#contact-modal">Contact us</button>
-
-        <!-- Modal -->
-            <div class="modal fade" id="contact-modal"  role="dialog" tabindex="-1" aria-labelledby="login-modal-label" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                 <div class="modal-content">
-                   <div class="modal-header">
-                      <h5 class="modal-title" id="login-modal-label">Get in touch</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    </div>
-                    <div class="modal-body">
-                      <form >
-                            <p>Thank you for reaching out!!!
-                                <br>
-                             enter you email and we will get back to you.</p>
-                          
-                          
-                              <label for="email">Email: </label>
-                              <input type="email" id="email" name="email" placeholder="Enter your email id" required />
-                          
-                      </form>
-                    </div>
-                    <div class="modal-footer">
-                      <button id="button" type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
-                    </div>
-                 </div>
-              </div>
-          </div>
-        <section id="para">
-            &copy; 2021 ROOM SEARCH PVT LTD
-        </section>
-      
-        <section id="footer-logo">
-            <a class="social-logo" href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="logo 1" height="20px" width="22px"></a>
-            <a class="social-logo" href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="logo 2" height="20px" width="22px"></a>
-            <a class="social-logo" href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="logo 3" height="20px" width="22px"></a>
-        </section>
-
     </footer>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/common.js"></script>
 </section>  
 </body>
 </html>

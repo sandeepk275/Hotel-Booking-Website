@@ -44,13 +44,26 @@
     /* align-items: center; */
     justify-content: space-evenly;
     /* margin: 5% 10%; */
-    padding: 3% 0%;
+    padding: 1% 0%;
     /* margin-left: 7%; */
     flex-wrap: wrap;
     flex-direction: row;
    
     
 }
+#viewMore-city-card-container {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    /* margin: 5% 10%; */
+    padding: 1% 0%;
+    /* margin-left: 7%; */
+    flex-wrap: wrap;
+    flex-direction: row;
+   
+    
+}
+
 .city-card {
     position: relative;
     /* width: 50%; */
