@@ -7,8 +7,9 @@
         height: 100%;
         width: 100%;
         margin-top: 6%;
+       
     }
-.hotel-decription {
+.hotel-description {
    
     margin: 4% 5% 2% 5%; 
     background-color: lightgrey;
@@ -18,13 +19,15 @@
     color: black;
     justify-content: start;
     align-content: center;
-    /* margin-bottom: 2%; */
+    
 }
-.hotel-decription:hover {
+.hotel-description:hover {
     background-color: rosybrown;
 }
 .about {
-   margin: 2%;
+   margin-left: 2%;
+   margin-top: 2%;
+
 }
 #list-view {
     display: flex;
