@@ -1,3 +1,19 @@
+
+// for loader only
+document.onreadystatechange = function() {
+  if (document.readyState !== "complete") {
+      document.querySelector("body").style.visibility = "hidden";
+      // document.getElementById("loaderdiv").setAttribute('class', loader);
+      document.querySelector(".loader").style.visibility = "visible";
+  } else {
+      document.querySelector(".loader").style.display = "none";
+      document.querySelector("body").style.visibility = "visible";
+  }
+}
+
+
+
+
 let headerTemplates=`<a href="index.html"><img src="assests/images/logo.png" alt="logo" height="200px" width="250" id="logo"></a>
          
         
@@ -74,9 +90,8 @@ document.getElementById("header").innerHTML=headerTemplates;
 
  document.getElementById("footer").innerHTML=footerTemplates;
 
- localStorage.clear();
 
-         localStorage.setItem("isUserLoggedIn", "false");
+        //  localStorage.setItem("isUserLoggedIn", "false");
 
 //  localStorage.clear();
  let loginCredential=(event)=>{
@@ -99,7 +114,8 @@ document.getElementById("header").innerHTML=headerTemplates;
         localStorage.setItem("isUserLoggedIn", "true");
         userElement.value="";
         passwordElement.value="";
-        toActivatePayNowBtn();
+        //  location.reload();
+        // toActivatePayNowBtn();
 
         
     }else{
@@ -117,13 +133,32 @@ document.getElementById("header").innerHTML=headerTemplates;
          logoutcondtion.innerHTML="LOGIN";
          
          logoutcondtion.dataset.target="";
-         location.reload();
-        //  localStorage.clear();
+        
+       
+         localStorage.clear();
 
-        //  localStorage.setItem("isUserLoggedIn", "false");
+         localStorage.setItem("isUserLoggedIn", "false");
+        //  toActivatePayNowBtn();
+          //  location.reload();
          
      }else{
         logoutcondtion.dataset.target="#login-modal";
-        // localStorage.clear();
+        localStorage.clear();
      }
  }
+
+ let chechfunc=()=>{
+  let logoutcondtion=document.getElementById("login");
+ let isUserIn= localStorage.getItem('isUserLoggedIn');
+
+  if(isUserIn){
+    logoutcondtion.innerHTML="LOGOUT";
+    
+  }
+  else{
+    logoutcondtion.innerHTML="LOGIN";
+    
+  }
+ }
+ chechfunc();
+ 

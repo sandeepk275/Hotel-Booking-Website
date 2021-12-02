@@ -11,8 +11,10 @@
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
    <link rel="stylesheet" href="styles/common.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles/loader.css">
 </head>
 <body>
+    <div class="loader"></div>
     <header class="header-footer" id="header">
        
     </header>
@@ -34,8 +36,8 @@
           </div>
     </section>
     <section class="form">
-        
-        <form action="payment.html"  method="get" target="_self">
+        <!-- method="get" -->
+        <form  id="frm"  action="payment.html">
             <div class="label-input">
                 <label class="label" for="adults">Adults</label>
                 <input class="input-form" oninput="forTotal(event)" type="number" min="1" id="adults" name="adults" required>
@@ -57,7 +59,7 @@
                 <input id="totalAmount" class="input-form" type="text" readonly required>
             </div >
             <div id="book-now">
-            <input id="book-now-btn"  class="btn btn-outline-success" type="submit" value="Book Now">
+            <input id="book-now-btn" onclick="forTotal(event)" class="btn btn-outline-success" type="submit" value="Book Now">
             </div>  
         </form>
     </section>

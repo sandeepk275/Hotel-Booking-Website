@@ -9,18 +9,19 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="styles/common.css">
+        <link rel="stylesheet" href="styles/loader.css">
     </head>
 <body>
+    <div class="loader"></div>
     <header class="header-footer" id="header">
        
     </header>
     <section id="content">  
         <section id="hotel-address">
-                 <img id="hotel-img" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="redisson blue">
+                 <img id="hotel-img"  alt="hotel image">
             <div id="address">
-                <h2>Redisson Blu Hotel</h2>
-                <p>#38 oot of 1289 hotels in new Delhi</p>
-                <p>NH-8 New Delhi 110017 India</p>
+                <h2 id="hotelNAME"></h2>
+                <p id="addressHotel"></p>
             </div>  
         </section>
         <section class="booking">
@@ -37,7 +38,7 @@
         
                 <article id="paynow">
                     <a href="#">
-                        <button type="button" id="paynowbtn" class="btn btn-success" disabled >Pay Now</button>
+                        <button type="button" onclick="pay()" id="paynowbtn" class="btn btn-success" disabled >Pay Now</button>
                     </a>
                 </article> 
         </section> 

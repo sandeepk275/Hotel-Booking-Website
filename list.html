@@ -10,8 +10,10 @@
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
    <link rel="stylesheet" href="styles/common.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles/loader.css">
 </head>
 <body>
+   
     <header class="header-footer" id="header">
       
     </header>
@@ -34,16 +36,18 @@
           
         </section>    
         
-        <section id="mapview" class="tab-pane fade">
-            <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="map">
+        <section id="mapview" id="map" class="tab-pane fade">
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdRO0Tv_ZgkycRgExgn8Ty9xMd2V9UdQc&callback=initMap"></script>
         </section>
     </div>
 </section>
     <footer class="header-footer" id="footer">
         
     </footer>
+    <div class="loader"></div>
     <script src="scripts/common.js"></script>
     <script src="scripts/list.js"></script>
+   
    
 </body>
 </html>

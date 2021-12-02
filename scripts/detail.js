@@ -1,3 +1,4 @@
+// for calculating amount from form data
 let forTotal=(event)=>{
     let numberOfAdults=document.getElementById("adults");
     let checkinDate=document.getElementById("from-date");
@@ -14,32 +15,28 @@ let forTotal=(event)=>{
     let currentCalenderset=`${year}-${month}-${date}`;
     
     let currentCalendersetOBJ=new Date(currentCalenderset);
-    
-    console.log(currentCalenderset);
-    console.log(currentCalendersetOBJ);
-    console.log(checkinDateobj);
 
 if( checkinDateobj>=currentCalendersetOBJ && checkoutDateobj>checkinDateobj){
-    let numberOfDays=(checkoutDateobj-checkinDateobj)/(1000*60*60*24);
+    let numberOfDays=Math.floor((checkoutDateobj-checkinDateobj)/(1000*60*60*24));
     let amount=1000*numberOfAdults.value*numberOfDays;
     document.getElementById("totalAmount").value=`Rs. ${amount}`;
-
+}
 }
 
-}
+// for blocking back date
 let current=new Date();
 let date=current.getDate();
+if(date<10){
+    date='0'+date;
+}
 let month=current.getMonth()+1;
 let year=current.getFullYear();
 
 let format=`${year}-${month}-${date}`;
 document.getElementById("from-date").setAttribute("min", format);
-let date2=date+1;
+let date2=1+date;
 formattwo=`${year}-${month}-${date2}`;
-document.getElementById("to-date").setAttribute("min", formattwo);
-
-
-
+document.getElementById("to-date").setAttribute("min", format);
 
 
 // for getting location id from url
@@ -57,8 +54,7 @@ let hotelImagefunc=()=>{
     xhtr.addEventListener("readystatechange", function () {
 	if (xhtr.readyState === xhtr.DONE) {
         let res=JSON.parse(xhtr.responseText);
-		console.log(res);
-
+		
         let crausalinnerDoc=document.getElementById('hotelimgdoc');
         let n=1;
     for(let i=0;i<10;i++){
@@ -72,19 +68,19 @@ let hotelImagefunc=()=>{
         DIV.setAttribute('data-interval', '10000');
     }else{
         DIV.setAttribute('class', 'carousel-item');
-        DIV.setAttribute('data-interval', '2000');
+        DIV.setAttribute('data-interval', '3000');
     }
         DIV.innerHTML=hotelImgTemp;
         let x=crausalinnerDoc.appendChild(DIV);
         n++;
       }
-      console.log(crausalinnerDoc);
+     
 	}
 });
 
 xhtr.open("GET", `https://travel-advisor.p.rapidapi.com/photos/list?location_id=${locationId}&currency=USD&limit=50&lang=en_US`);
 xhtr.setRequestHeader("x-rapidapi-host", "travel-advisor.p.rapidapi.com");
-xhtr.setRequestHeader("x-rapidapi-key", "2c96c96e62msh40a3f1253220c66p108c29jsn7ec605ac3abb");
+xhtr.setRequestHeader("x-rapidapi-key", "240f54d273msh2e9e32197364201p14448cjsn36de92445f72");
 
 xhtr.send(datas);
 
@@ -102,8 +98,7 @@ const xhr = new XMLHttpRequest();
 xhr.addEventListener("readystatechange", function () {
 	if (this.readyState === this.DONE) {
         let res=JSON.parse(this.responseText);
-		console.log(res);
-
+	
         let hotelName=res.data[0].name;
         document.getElementById("hotelname").innerText=hotelName;
 
@@ -124,6 +119,9 @@ xhr.addEventListener("readystatechange", function () {
 
 xhr.open("GET", `https://travel-advisor.p.rapidapi.com/hotels/get-details?location_id=${locationId}&checkin=2021-12-15&adults=1&lang=en_US&child_rm_ages=7%2C10&currency=USD&nights=2`);
 xhr.setRequestHeader("x-rapidapi-host", "travel-advisor.p.rapidapi.com");
-xhr.setRequestHeader("x-rapidapi-key", "2c96c96e62msh40a3f1253220c66p108c29jsn7ec605ac3abb");
+xhr.setRequestHeader("x-rapidapi-key", "240f54d273msh2e9e32197364201p14448cjsn36de92445f72");
 
 xhr.send(data);
+
+
+sessionStorage.setItem('locationIdData',`${locationId}`)

@@ -11,7 +11,8 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
    <link rel="stylesheet" href="styles/common.css">
-   
+
+<link rel="stylesheet" href="styles/loader.css">
 </head>
 
 <body>
@@ -22,7 +23,7 @@
         <section id="index-container">
             <section id="banner"  >
                 <div id="searchbar">
-                    <input id="search-input"  type="text" placeholder="City">
+                    <input id="search-input" onchange="searchbyCity(value)"  type="text" placeholder="City">
                 </div>
                     
             </section>
@@ -113,6 +114,7 @@
     <footer class="header-footer" id="footer">
           
     </footer>
+    <div class="loader"></div>
     <script src="scripts/index.js"></script>
     <script src="scripts/common.js"></script>
 </section>  
