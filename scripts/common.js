@@ -115,7 +115,7 @@ document.getElementById("header").innerHTML=headerTemplates;
         userElement.value="";
         passwordElement.value="";
         //  location.reload();
-        // toActivatePayNowBtn();
+        toActivatePayNowBtn();
 
         
     }else{
@@ -147,18 +147,18 @@ document.getElementById("header").innerHTML=headerTemplates;
      }
  }
 
- let chechfunc=()=>{
-  let logoutcondtion=document.getElementById("login");
- let isUserIn= localStorage.getItem('isUserLoggedIn');
+//  let chechfunc=()=>{
+//   let logoutcondtion=document.getElementById("login");
+//  let isUserIn= localStorage.getItem('isUserLoggedIn');
 
-  if(isUserIn){
-    logoutcondtion.innerHTML="LOGOUT";
+//   if(isUserIn){
+//     logoutcondtion.innerHTML="LOGOUT";
     
-  }
-  else{
-    logoutcondtion.innerHTML="LOGIN";
+//   }
+//   else{
+//     logoutcondtion.innerHTML="LOGIN";
     
-  }
- }
- chechfunc();
+//   }
+//  }
+//  chechfunc();
  

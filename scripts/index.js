@@ -15,7 +15,7 @@ function onclickView(){
 let searchbyCity=(value)=>{
     let searchElement=document.getElementById("search-input");
     let city=searchElement.value;
-    console.log(city);
-    searchElement.setAttribute('src', `list.html?city=${city}`)
+    // console.log(city);
+    window.location=`list.html?city=${city}`;
 
 }
