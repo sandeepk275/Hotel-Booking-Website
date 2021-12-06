@@ -23,7 +23,8 @@
         <section id="index-container">
             <section id="banner"  >
                 <div id="searchbar">
-                    <input id="search-input" onchange="searchbyCity(value)"  type="text" placeholder="City">
+                    <input id="search-input"  onkeyup="citytyping(event)"  type="text" placeholder="City">
+                    <input onclick="setvalue(event)" id="auto-items"></input>
                 </div>
                     
             </section>

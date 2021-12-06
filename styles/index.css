@@ -20,6 +20,22 @@
     right: 36%;
     bottom: 50%;
 }
+
+#auto-items {
+   
+    border: 1px solid #d4d4d4;
+    background-color: #f1f1f1;
+    border-radius: 12px;
+    border-top: none;
+    /* z-index: 99; */
+    top: 100%;
+    visibility: hidden;
+    /* left: 0;
+    right: 0; */
+    width: 100%;
+    padding: 10px;
+  }
+
 #search-input {
     border: 1px solid transparent;
     background-color: #f1f1f1;
